@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-page navbar">
+        <h2>Payments App</h2>
+        <form>
+          <input type="text" placeholder="Login" class="login-input" />
+          <input type="password" placeholder="Parol" class="password-input" />
+          <button class="button login-button">Kirish</button>
+        </form>
+      </div>
+      <div class="payment-app hidden">
+        <nav class="navbar">
+          <h2 class="title">****</h2>
+          <button class="button log-out-btn">Chiqish</button>
+        </nav>
+
+        <main class="main">
+          <div class="left">
+            <section class="my-card">
+              <h2>Mening kartam</h2>
+              <div class="card">
+                <span class="card-type">****</span>
+                <span><img src="./assets/icon/Group 1.svg" alt="" /></span>
+                <span class="amount">*****</span>
+                <span class="fullName">*** ***</span>
+                <div class="card-info">
+                  <span class="card-number">**** **** **** ****</span>
+                  <span class="card-expired-date">**/**</span>
+                </div>
+              </div>
+            </section>
+            <section class="transfer">
+              <h2>Pul o'tkazmalari</h2>
+              <form>
+                <input
+                  type="text"
+                  placeholder="Karta raqami"
+                  class="transfer-card-num"
+                />
+                <input
+                  type="text"
+                  placeholder="Summasi"
+                  class="transfer-amount"
+                />
+                <button class="button transfer-btn">Yuborish</button>
+              </form>
+            </section>
+          </div>
+          <section class="pay-history">
+            <h2>O'tkazmalar tarixi</h2>
+            <div class="overal-amount">
+              <div class="green"></div>
+              <div class="red"></div>
+            </div>
+
+            <ul class="all-history">
+              <li class="history-item">
+                <div class="fullName">
+                  <p>*** ***</p>
+                  <p class="red">- ***$</p>
+                </div>
+                <span class="date">
+                  <span>****</span>
+                  <span>** **</span>
+                </span>
+              </li>
+              <li class="history-item">
+                <div class="fullName">
+                  <p>*** ***</p>
+                  <p class="green">+ ***$</p>
+                </div>
+                <span class="date">
+                  <span>****</span>
+                  <span>** **</span>
+                </span>
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+      <div class="table-box">
+        <table class=".table">
+          <thead>
+            <tr class="thead-tr"></tr>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
